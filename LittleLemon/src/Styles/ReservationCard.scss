@@ -1,0 +1,99 @@
+.reservation-card {
+  width: 90%;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin-bottom: 25px;
+    font-size: 2.1rem;
+    text-align: center;
+    color: #ff9f1c;
+  }
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  input {
+    width: auto;
+    padding-top: 14px;
+    padding-bottom: 14px;                    
+    padding-left: 14px;                                   
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: #2ec4b6;
+      outline: none;
+    }
+  }
+
+  button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #ffbf69;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    grid-column: span 2; /* will center across 2 cols on desktop */
+
+    &:hover {
+      background: #ff9f1c;
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  .error {
+    color: #e74c3c;
+    font-size: 0.85rem;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 800px;
+    padding: 40px;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* 2 per row */
+      gap: 12px;
+      align-items: center;
+    }
+
+    input {
+      font-size: 1.1rem;
+      padding: 16px;
+      width: auto;
+    }
+
+    button {
+      justify-self: center; /* center the button */
+      width: 50%; /* smaller width */
+    }
+  }
+}

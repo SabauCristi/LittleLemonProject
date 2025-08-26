@@ -1,0 +1,36 @@
+.footer {
+  background: #ff9f1c;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  width: 100%;
+  margin-top: 30px;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+
+    a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 4px;
+
+      &:hover {
+        color: #ffe6b3;
+      }
+    }
+  }
+}
+
+/* Larger screens: keep text in a row */
+@media (min-width: 768px) {
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}

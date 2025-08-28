@@ -37,7 +37,7 @@ export default function Navbar(){
       </div>
 
       <div className="logo">
-        <a onClick={() => handleScroll("top")}>About Us</a>
+        <a onClick={() => handleScroll("top")}>Little Lemon</a>
       </div>
     </nav>
   );
